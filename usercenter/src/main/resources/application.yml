@@ -20,4 +20,4 @@ endpoints:
   shutdown:
     enabled: true
   health:
-    sensitive: true
+    sensitive: false
