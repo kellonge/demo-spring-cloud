@@ -6,6 +6,8 @@ import org.springframework.cloud.client.circuitbreaker.EnableCircuitBreaker;
 import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 import org.springframework.cloud.netflix.feign.EnableFeignClients;
 import org.springframework.context.ConfigurableApplicationContext;
+import org.springframework.core.env.MutablePropertySources;
+import org.springframework.core.env.PropertySource;
 
 import com.kellonge.demo.spring.cloud.usercenter.task.StartUpTaskUtil;
 
@@ -23,5 +25,13 @@ public class UserCenterApplication {
     public static void main(String[] args) throws InterruptedException {
         ConfigurableApplicationContext context = SpringApplication.run(UserCenterApplication.class, args);
         StartUpTaskUtil.init(context);
+        MutablePropertySources propertySources = context.getEnvironment().getPropertySources();
+
+        for (PropertySource<?> propertySource : propertySources) {
+            System.out.println(propertySource.getName());
+        }
+
+        System.out.println(context.getEnvironment().getActiveProfiles()[0]);
+
     }
 }
