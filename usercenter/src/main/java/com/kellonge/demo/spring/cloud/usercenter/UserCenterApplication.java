@@ -30,8 +30,6 @@ public class UserCenterApplication {
         for (PropertySource<?> propertySource : propertySources) {
             System.out.println(propertySource.getName());
         }
-
         System.out.println(context.getEnvironment().getActiveProfiles()[0]);
-
     }
 }
