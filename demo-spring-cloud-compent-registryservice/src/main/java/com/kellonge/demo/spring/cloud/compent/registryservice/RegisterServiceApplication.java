@@ -1,5 +1,10 @@
 package com.kellonge.demo.spring.cloud.compent.registryservice;
 
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
+import org.springframework.cloud.netflix.eureka.server.EnableEurekaServer;
+
 /**
  * 服务注册与发现
  *
