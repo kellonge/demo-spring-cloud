@@ -66,5 +66,6 @@
 
     <modules>
         <module>demo-spring-cloud-compent-configservice</module>
+        <module>demo-spring-cloud-compent-registryservice</module>
     </modules>
 </project>
