@@ -67,5 +67,15 @@
     <modules>
         <module>demo-spring-cloud-compent-configservice</module>
         <module>demo-spring-cloud-compent-registryservice</module>
+        <module>demo-spring-cloud-service-common</module>
+        <module>demo-spring-cloud-service-dao</module>
+        <module>demo-spring-cloud-service-bussiness</module>
+        <module>demo-spring-cloud-service-intergration</module>
+        <module>demo-spring-cloud-service-usercenter</module>
+        <module>demo-spring-cloud-service-merchantscenter</module>
+        <module>demo-spring-cloud-service-ordercenter</module>
+        <module>demo-spring-cloud-service-api</module>
+        <module>demo-spring-cloud-service-task</module>
+        <module>demo-spring-cloud-service-runable</module>
     </modules>
 </project>
