@@ -88,5 +88,7 @@
         <module>demo-spring-cloud-service-api</module>
         <module>demo-spring-cloud-service-task</module>
         <module>demo-spring-cloud-service-runable</module>
+        <module>demo-spring-cloud-service-bean</module>
+        <module>demo-spring-cloud-service-client</module>
     </modules>
 </project>

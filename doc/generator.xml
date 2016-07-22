@@ -7,7 +7,6 @@
 
 	<context id="MBG" targetRuntime="MyBatis3">
 
-		<!-- <plugin type="org.ala.generator.plugin.MySqlPagePlugin"></plugin> -->
 
 		<commentGenerator>
 			<property name="suppressAllComments" value="false" />
@@ -17,32 +16,32 @@
 		</commentGenerator>
 
 		<!-- 数据库配置 -->
-		<jdbcConnection driverClass="com.mysql.jdbc.Driver" connectionURL="jdbc:mysql://192.168.2.200/PayOrderCenter?characterEncoding=utf8&amp;allowMultiQueries=true&amp;useInformationSchema=true" userId="root" password="zufangbao69fc">
+		<jdbcConnection driverClass="com.mysql.jdbc.Driver" connectionURL="jdbc:mysql://127.0.0.1/DemoSpringCloud?characterEncoding=utf8&amp;allowMultiQueries=true&amp;useInformationSchema=true" userId="root" password="123456">
 		</jdbcConnection>
 
-		<!-- <javaTypeResolver> <property name="forceBigDecimals" value="true" /> </javaTypeResolver> -->
 
 		<!-- model配置 -->
-		<javaModelGenerator targetPackage="com.u51.payordercenter.dao.entities" targetProject="./MyBatisCode">
+		<javaModelGenerator targetPackage="com.kellonge.demo.spring.cloud.bean.entities" targetProject="./MyBatisCode">
 			<property name="enableSubPackages" value="true" />
 			<property name="trimStrings" value="false" />
-			<fieldAnnotation name="jsonDeserializer" value="com.fasterxml.jackson.databind.annotation.JsonSerialize(using = JacksonDateTimeSerializer.class)" importType="com.u51.utils.jackson.JacksonDateTimeSerializer" targetType="java.util.Date"/>
-			<fieldAnnotation name="jsonSerializer" value="com.fasterxml.jackson.databind.annotation.JsonDeserialize(using = JacksonDateDeserializer.class)" importType="com.u51.utils.jackson.JacksonDateDeserializer" targetType="java.util.Date"/>
 		</javaModelGenerator>
 
 		<!-- xml配置文件 -->
-		<sqlMapGenerator targetPackage="com.u51.payordercenter.dao.xml" targetProject="./MyBatisCode">
+		<sqlMapGenerator targetPackage="com.kellonge.demo.spring.cloud.dao.xml" targetProject="./MyBatisCode">
 			<property name="enableSubPackages" value="true" />
 		</sqlMapGenerator>
 
 		<!--接口 -->
-		<javaClientGenerator type="XMLMAPPER" targetPackage="com.u51.payordercenter.dao.mapper" targetProject="./MyBatisCode">
+		<javaClientGenerator type="XMLMAPPER" targetPackage="com.kellonge.demo.spring.cloud.dao.mapper" targetProject="./MyBatisCode">
 			<property name="enableSubPackages" value="true" />
-			<modifyDbAnnotation name="masterDataSource" value="com.u51.payordercenter.datasources.annotations.MasterDataSource"/>
 		</javaClientGenerator>
 
 		<!-- tableName是要生成映射的表明， domainObjectName是生成映射的实体类名 --> 
-		<table tableName="T_User_CreditAmount_Log" domainObjectName="UserCreditAmountLogEntity" >   
-		</table> 
+		<table tableName="T_User_Info" domainObjectName="UserInfoEntity" >
+		</table>
+		<table tableName="T_Order" domainObjectName="OrderEntity" >
+		</table>
+		<table tableName="T_Merchants" domainObjectName="MerchantsEntity" >
+		</table>
 	</context>
 </generatorConfiguration>
