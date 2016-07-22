@@ -53,10 +53,10 @@
             <artifactId>spring-boot-starter-test</artifactId>
             <scope>test</scope>
         </dependency>
-        <!-- -->
+        <!-- inner dependency -->
         <dependency>
             <groupId>com.kellonge</groupId>
-            <artifactId>demo-spring-cloud-service-bean</artifactId>
+            <artifactId>demo-spring-cloud-service-common</artifactId>
             <version>${project.parent.version}</version>
         </dependency>
     </dependencies>

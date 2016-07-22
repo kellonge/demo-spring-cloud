@@ -1,6 +1,6 @@
 package com.kellonge.demo.spring.cloud.dao.mapper;
 
-import com.kellonge.demo.spring.cloud.bean.entities.OrderEntity;
+import com.kellonge.demo.spring.cloud.dao.entities.OrderEntity;
 import com.kellonge.demo.spring.cloud.dao.examples.OrderEntityExample;
 import org.apache.ibatis.annotations.Param;
 

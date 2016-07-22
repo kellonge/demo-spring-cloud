@@ -21,7 +21,7 @@
 
 
 		<!-- model配置 -->
-		<javaModelGenerator targetPackage="com.kellonge.demo.spring.cloud.bean.entities" targetProject="./MyBatisCode">
+		<javaModelGenerator targetPackage="com.kellonge.demo.spring.cloud.dao.entities" targetProject="./MyBatisCode">
 			<property name="enableSubPackages" value="true" />
 			<property name="trimStrings" value="false" />
 		</javaModelGenerator>

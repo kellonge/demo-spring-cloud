@@ -2,7 +2,7 @@ package com.kellonge.demo.spring.cloud.dao.mapper;
 
 import java.util.List;
 
-import com.kellonge.demo.spring.cloud.bean.entities.MerchantsEntity;
+import com.kellonge.demo.spring.cloud.dao.entities.MerchantsEntity;
 import com.kellonge.demo.spring.cloud.dao.examples.MerchantsEntityExample;
 import org.apache.ibatis.annotations.Param;
 

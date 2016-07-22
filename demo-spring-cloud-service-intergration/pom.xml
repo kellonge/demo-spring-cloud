@@ -24,6 +24,12 @@
             <version>3.8.1</version>
             <scope>test</scope>
         </dependency>
+        <!-- inner dependency -->
+        <dependency>
+            <groupId>com.kellonge</groupId>
+            <artifactId>demo-spring-cloud-service-common</artifactId>
+            <version>${project.parent.version}</version>
+        </dependency>
     </dependencies>
     <build>
         <plugins>

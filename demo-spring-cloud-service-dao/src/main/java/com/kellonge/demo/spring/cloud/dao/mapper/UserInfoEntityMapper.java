@@ -1,6 +1,6 @@
 package com.kellonge.demo.spring.cloud.dao.mapper;
 
-import com.kellonge.demo.spring.cloud.bean.entities.UserInfoEntity;
+import com.kellonge.demo.spring.cloud.dao.entities.UserInfoEntity;
 import com.kellonge.demo.spring.cloud.dao.examples.UserInfoEntityExample;
 import org.apache.ibatis.annotations.Param;
 
