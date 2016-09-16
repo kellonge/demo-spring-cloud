@@ -8,7 +8,7 @@
         </encoder>
         <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
             <fileNamePattern>
-                /var/www/logs/registryservice-%d{yyyy-MM-dd}.%i.log
+                /var/www/logs/kellonge/registryservice-%d{yyyy-MM-dd}.%i.log
             </fileNamePattern>
             <timeBasedFileNamingAndTriggeringPolicy class="ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP">
                 <maxFileSize>200 MB</maxFileSize>
